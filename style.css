@@ -1,0 +1,1073 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Playfair Display', serif;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.header{
+    position:fixed;
+    width:100%;
+    /* border:2px solid white; */
+    z-index: 800;
+    
+}
+.menu{
+    display:none;
+}
+#head:hover{
+    opacity:1;
+    /* background-color:rgba(0, 0, 0, 0.678); */
+}
+#head{
+    position:fixed;
+    width:100%;
+    /* border:2px solid white; */
+    background-color:#00000059;
+    opacity:1;
+    transition: 1s;
+}
+#logo{
+    width:70%;
+    top:5px;
+    margin-left:15px;
+}
+.contact{
+	width:100%;
+	/* border:2px solid white; */
+	color:#f6efe9;
+	overflow:hidden;
+    margin-top: 7px;	
+    
+}
+.phone{
+	font-family:aboreto;
+	font-size:16px;
+    width:100%;
+    margin-left: 20px;
+    /* border:2px solid white; */
+}
+.sign{
+	font-family:aboreto;
+	font-size:16px;
+    margin-left: 40px;
+   
+}
+#nav{
+    position:relative;
+    width:100%;
+    /* border:2px solid white; */
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 55px;
+}
+
+#nav li{
+   display:inline-block;
+
+}
+#nav li a{
+    display:block;
+    padding:5px 15px;
+    color:#ffffff;
+    text-decoration:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition:1s;
+}
+#nav li a:hover{
+    color:rgb(255, 233, 200);
+    background-color: rgba(245, 137, 60, 0.815);
+}
+#nav ul ul{
+    position:absolute;
+    display:none;
+	width:100%;
+}
+#nav ul li:hover ul{
+    display:block;
+	width:250px;
+	padding:0px ; 
+	text-decoration:none;
+    z-index:800;
+    /* border:2px solid white; */
+    background-color: #000000a9;
+}
+#nav>ul>li:last-child{
+    background-color: #f5893cd0;
+}
+#nav>ul>li:last-child a{
+    font-weight: bold;
+}
+#nav ul li:hover ul li{
+    width:250px;
+    display: inline-block;
+}
+.booking{
+    width:55%;
+    /* height:300px; */
+    background-color: white;
+    margin:100px auto;
+    z-index: 799;
+    position:relative;
+    background-color:rgb(255, 255, 255);
+    border: 2px solid #160904d0;
+    border-radius: 5px;
+    display:none;
+}
+.mySlides {
+    display: none;
+}
+.display{
+    display:none;
+}
+.img{
+    width:100%;
+}
+.iclass{
+    width:100%;
+}
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 5s;
+  }
+  
+  @keyframes fade {
+    from {
+    opacity: .9;
+    transform: scale(1.2);
+    } 
+    to {opacity: 1;
+        transform: scale(1);
+    }
+  }
+.cross{
+    font-size: 50px;
+    text-align: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.popup{
+    cursor: pointer;
+}
+.container{
+    width:1180px;
+    margin:-4px auto;
+}
+.container-fluid{
+    width:100%;
+}
+.bgcolor{
+    background-color: rgba(10, 10, 10, 0.945);
+}
+.book{
+    width:100%;
+    /* border:2px solid red; */
+    display:flex;
+    flex-wrap: warp; 
+    justify-content: center;  
+}
+
+.bookbox{
+    width: 99%;
+    margin:1%;
+    padding:3%;
+    /* background-color: aquamarine; */
+    /* border:2px solid rgb(156, 150, 150); */
+    text-align: center;
+    color:#f6efe9
+}
+.bookbox h2{
+    color:rgb(0, 0, 0);
+    margin:0;
+    padding:0;
+    text-align: left;
+    margin-left: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.bookbox input{
+    width:280px;
+    height:35px;
+    font-size: 17px;
+    background-color: #e9e9ed;
+    border-radius: 4px;
+    border:1px solid black;
+    /* background-image: url('image/searchicon.png'); */
+    background-position: 5px 5px; 
+    background-size: 27px;
+    background-repeat: no-repeat;
+    padding-left: 50px ;
+}
+
+.bookbox select{
+    width:280px;
+    height:35px;
+    font-size: 18px;
+}
+.bookbox1{
+    text-align: center;
+    /* border:2px solid black; */
+}
+.bookbox1 select{
+    width:150px;
+    height:35px;
+    font-size: 15px;
+}
+.bookbox1 h2{
+    text-align: left;
+    margin-left: 48px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.bookbox1 input{
+    width:150px;
+    height:35px;
+    font-size: 17px;
+    background-color: #e9e9ed;
+    border-radius: 4px;
+    border:1px solid rgb(99, 99, 99);
+}
+.booknow{
+    text-align: center;
+    margin:40px;
+}   
+.booknow a{
+    display:inline-block;
+    background-color: rgb(223, 122, 50);;
+    padding:15px;
+    text-decoration: none;
+    color:#000;
+    border-radius: 5px; 
+    transition:0.5s;
+}
+.booknow a:hover{
+    background-color:rgb(161, 53, 13);
+    color:white;
+}
+
+.check{
+    width:60%;
+    background-color:  rgb(165, 91, 39);
+    margin:25px 0px 20px 54px;
+    border-radius: 5px;
+    padding:2px;
+}
+.check a{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.border{
+    border:2px solid black;
+}
+.innerbody{
+    position: relative;
+    width:100%;
+    top:10px;
+    background-color: beige;  
+}
+.box{
+    position:relative;
+    width:100%;
+}
+.text{
+    position: relative;
+    font-family: 'Playfair Display';
+    width:95%;
+    margin:auto;
+    top:50px;
+    color:rgb(24, 12, 4);
+    /* height:400px; */
+
+}
+.text .h{
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    font-weight: bold;
+    padding:10px;
+}
+.text h1{
+    padding: 10px;
+}
+.text p{
+    padding:10px;
+    font-size: 18px;
+    font-family: 'Playfair Display';
+}
+.text5{
+    position: relative;
+    font-family: 'Playfair Display';
+    width:95%;
+    margin:auto;
+    top:50px;
+    color:rgb(54, 27, 9);
+    /* height:400px; */
+
+}
+.text5 .h{
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    font-weight: bold;
+    padding:10px;
+    text-align: center;
+}
+.text5 h1{
+    padding: 10px;
+}
+.text5 p{
+    padding-top:10px;
+    font-size: 18px;
+    font-family: 'Playfair Display';
+    text-align: center;
+}
+.call{
+    width:100%;
+    margin-top: 100px;
+    color:rgb(54, 27, 9);
+}
+.call i{
+    font-size: 30px;
+
+} 
+.call .icon{
+    margin:25px; 
+    font-size: 15px;
+    font-family: 'Playfair Display';
+}
+.call .icon h2{
+    margin-left: 20px;
+}
+.call .icon1{
+    text-align: center;
+    margin:20px; 
+    font-family: 'Playfair Display';
+}
+.pic1,.pic2 {
+    width:100%;
+}
+.text2{
+    margin:70px 30px 0px 30px;
+    font-family: 'Playfair Display' ;
+}
+.text2 h1{
+    margin-top: 30%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.paralux{
+    width:100%;
+    position:relative;
+    height:400px;
+    top:20px;
+    background: url("image/balcony.jpg") no-repeat center center / cover;
+    background-attachment: fixed;
+}
+.paraluxtext{
+    width:100%;
+    margin:auto;
+    height:400px;
+    background-color: rgba(20, 19, 19, 0.404);
+    color:rgb(240, 240, 240);
+    text-align:center;
+    font-family: 'Playfair Display';
+    font-size: 18px;
+}
+.paraluxtext2{
+    Width:70%;
+    position: absolute;
+    margin:auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:120px;
+    
+}
+.rooms {
+    text-align: center;
+    padding: 10px;
+    color:rgb(78, 37, 7);
+}
+.room{
+    Width:100%;
+    position :relative;
+    top:30px;
+    color:rgb(37, 18, 3);
+    
+}
+.deluxsuit .icon1{
+    margin-top:10px;
+    font-size: 20px;
+    text-align: center;
+}
+.deluxsuit {
+    background-color: antiquewhite;
+    padding:20px;
+}
+.pic{
+    overflow: hidden;
+}
+.pic img{
+    transition:2s;
+    transform: scale(1.2);
+}
+.pic img:hover{
+    transform: scale(1);
+}
+.deluxsuit .text{
+    text-align: center;
+    /* margin-top: 10px; */
+}
+.color{
+    background-color:antiquewhite ;
+    padding-top:20px;
+    margin-top: 50px;
+
+}
+.color h1{
+    padding-top: 10px;
+    padding-bottom:20px;
+    text-align: center;
+    color:rgb(78, 37, 7);
+}
+.text2 p{
+    font-size: 20px;
+}
+.text3 p{
+    font-size: 20px;
+}
+.text3 h2{
+    color:rgb(78, 37, 7);
+}
+.text2 h2{
+    padding-bottom:20px;
+    color:rgb(78, 37, 7);
+}
+.award img{
+    margin:20px auto;
+    display: block;
+}
+.award h1{
+    text-align: center;
+    color:rgb(78, 37, 7);
+    padding-top:10px;
+}
+.career{
+    background-color: rgb(231, 219, 247);
+    margin-top: 20px;
+    font-family: 'Playfair Display';
+}
+
+.careerimg{
+    padding:20px;
+}
+.careertextbody h2{
+    padding:28px;
+    font-size: 30px;
+}
+.careertextbody p{
+    padding:20px;
+    font-size: 20px;
+}
+.careerbutton{
+    padding:10px;
+    margin-left:20px;
+
+}
+.bgcolor2{
+    background-color:rgb(26, 13, 4);
+}
+.address{
+    color:rgb(199, 114, 54);
+    font-size: 18px;
+    padding:10px;
+    padding-top:30px;
+    text-align: center;
+}
+.address .followus{
+    font-size: 32px;
+}
+.company{
+    color:rgb(199, 114, 54);
+    padding-top: 30px;
+    text-align: center;
+}
+.company ul{
+    list-style-type: none;
+    color:rgb(199, 114, 54);
+}
+.company li a{
+    text-decoration: none;
+    display:inline-block;
+    padding:8px;
+    color:rgb(199, 114, 54);
+}
+.location{
+    padding-top: 30px;
+}
+.developedby{
+    font-size: 18px;
+    padding:20px;
+    border-top:1px solid rgb(185, 107, 42);
+    color:rgb(199, 114, 54);
+    margin:0px auto;
+
+}  
+
+@media screen and (max-width:1200px) and (min-width:1025px){
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+   
+    .container{
+        width:992px;
+        margin:-4px auto;
+    }
+    #nav li a{
+        padding:3px 10px;
+    }
+    .phone{
+        display:flex;
+    }
+    .sign{
+        display:none;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .call i{
+        font-size: 25px;
+    } 
+    .call .icon h2{
+        margin-left: 5px;
+        font-size: 18px;
+    }
+    .text2 h1{
+       font-size:18px;
+    }
+    .paraluxtext2 h2{
+        font-size: 25px;
+    }
+    .paralux{
+        height:300px;
+    }
+    .paraluxtext{
+        height:300px;
+    }
+    .icon1 i,h4{
+        font-size: 18px;
+    }
+    .color h1{
+        padding-top: 0px;
+    }
+    .text2 p{
+        font-size: 15px;
+    }
+    .text3 p{
+        font-size: 20px;
+    }
+    
+    .careertextbody h2{
+        padding:30px;
+        font-size: 30px;
+    }
+    .careertextbody p{
+        padding:20px;
+        font-size: 20px;
+    }
+    .careerbutton{
+        padding:8px 12px;
+        margin-left:20px;
+    
+    }
+   
+
+}
+@media screen and (max-width:1025px){
+    .header{
+        display:none;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:768px){
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+    
+    .container{
+        width:767px;
+        margin:-4px auto;
+    }
+    .menu{
+        display:block;
+        width:100%;
+        background-color: rgb(10, 5, 5);
+        /* border:2px solid red; */
+        color:#f6efe9;
+    }
+    .logo{
+        padding:5px;
+    }
+    .menubar i{
+        text-align: right;
+        display: inline-block;
+        padding:20px 10px;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    .menubar i:hover{
+        color:coral;
+    }
+    .nav2{
+        position:absolute;
+        z-index: 850;
+        width:100%;
+        display:none;
+
+    }
+    .nav2 ul li{
+      text-align: center;
+    }
+    .nav2 ul li a{
+        text-decoration: none;
+        display:block;
+        padding:20px;
+        background-color: #0f0101a4;
+        transition: 1s;
+        color: antiquewhite;
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    .nav2 ul li a:hover{
+        background-color: #080101e3;
+        color: rgb(255, 145, 0);
+    }
+    .nav2 ul li:last-child a{
+        color: rgb(255, 145, 0);
+        font-weight: bold;
+        
+    }
+    .phone{
+        display:flex;
+    }
+    .sign{
+        display:none;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .text{
+        top:10px;
+    }
+    .call i{
+        font-size: 30px;
+    } 
+    .call .icon h2{
+        margin-left: 5px;
+        font-size: 25px;
+    }
+    .text2 h1{
+       font-size:20px;
+    }
+    .paraluxtext2 h2{
+        font-size: 25px;
+    }
+    .paralux{
+        height:300px;
+    }
+    .paraluxtext{
+        height:300px;
+    }
+    .icon1 i,h4{
+        font-size: 18px;
+    }
+    .color h1{
+        padding-top: 0px;
+    }
+    .text2{
+        margin: 20px 20px;
+    }
+    .text2 p{
+        font-size: 13px;
+    }
+    .text3 p{
+        font-size: 20px;
+    }
+    
+    .icon1{
+        margin-top:5px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .text h1{
+        font-size: 22px;
+        padding:5px;
+        margin-top: 2px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .careertextbody h2{
+        padding:20px;
+        font-size: 25px;
+    }
+    .careertextbody p{
+        padding:10px;
+        font-size: 18px;
+    }
+    .careerbutton{
+        padding:8px 12px;
+        margin-left:20px;
+    
+    }
+}
+@media screen and (max-width:767px) and (min-width:557px){
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+   
+    .container{
+        width:550px;
+        margin:-4px auto;
+    }
+    .menu{
+        display:block;
+        width:100%;
+        background-color: rgb(27, 27, 27);
+        /* border:2px solid red; */
+        color:#f6efe9;
+    }
+    .logo{
+        padding:5px;
+    }
+    .menubar i{
+        text-align:center;
+        display: inline-block;
+        padding:10px 3px;
+        font-size: 35px;
+    }
+    .menubar i:hover{
+        color:coral;
+    }
+    .nav2{
+        position:absolute;
+        z-index: 850;
+        width:100%;
+        display:none;
+
+    }
+    .nav2 ul li{
+      text-align: center;
+    }
+    .nav2 ul li a{
+        text-decoration: none;
+        display:block;
+        padding:12px;
+        background-color: #0f0101d3;
+        transition: 1s;
+        color: antiquewhite;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    .nav2 ul li a:hover{
+        background-color: #080101f1;
+        color: rgb(255, 145, 0);
+    }
+    .nav2 ul li:last-child a{
+        color: rgb(255, 145, 0);
+        font-weight: bold;
+        
+    }
+    
+    .phone{
+        display:flex;
+    }
+    .sign{
+        display:none;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .text{
+        top:10px;
+    }
+    .call i{
+        font-size: 30px;
+    } 
+    .call .icon h2{
+        margin-left: 5px;
+        font-size: 25px;
+    }
+    .text2 h1{
+       font-size:18px;
+       
+    }
+    .paraluxtext2 h2{
+        font-size: 20px;
+    }
+    .paralux{
+        height:300px;
+    }
+    .paraluxtext{
+        height:300px;
+    }
+    .icon1 i,h4{
+        font-size: 18px;
+    }
+    .color h1{
+        padding-top: 0px;
+    }
+    .text2{
+        margin: 10px 20px;
+        text-align: center;
+    }
+    .text2 p{
+        font-size: 13px;
+    }
+    .text3 p{
+        font-size: 20px;
+    }
+    
+    .icon1{
+        margin-top:5px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .text h1{
+        font-size: 22px;
+        padding:5px;
+        margin-top: 2px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .careertextbody h2{
+        padding:10px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .careertextbody p{
+        padding:10px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .careerbutton{
+        display:block;
+        margin:20px auto;
+    
+    }
+}
+@media screen and (max-width:550px) and (min-width:360px){
+    .col-xs-1 {width: 8.33%;}
+    .col-xs-2 {width: 16.66%;}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%;}
+    .col-xs-5 {width: 41.66%;}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}
+    .col-xs-8 {width: 66.66%;}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%;}
+    .col-xs-11 {width: 91.66%;}
+    .col-xs-12 {width: 100%;}
+    
+   
+    .container{
+        width: 360px;
+        margin:-4px auto;
+    }
+    .menu{
+        display:block;
+        width:100%;
+        background-color: rgb(27, 27, 27);
+        /* border:2px solid red; */
+        color:#f6efe9;
+    }
+    .logo{
+        padding:5px;
+    }
+    .menubar i{
+        text-align:center;
+        display: inline-block;
+        padding:10px 0px;
+        padding-right: 10px;
+        font-size: 30px;
+    }
+    .menubar i:hover{
+        color:coral;
+    }
+    .nav2{
+        position:absolute;
+        z-index: 850;
+        width:100%;
+        display:none;
+
+    }
+    .nav2 ul li{
+      text-align: center;
+    }
+    .nav2 ul li a{
+        text-decoration: none;
+        display:block;
+        padding:10px;
+        background-color: #0f0101cb;
+        transition: 1s;
+        color: antiquewhite;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    .nav2 ul li a:hover{
+        background-color: #080101e3;
+        color: rgb(255, 145, 0);
+    }
+    .nav2 ul li:last-child a{
+        color: rgb(255, 145, 0);
+        font-weight: bold;
+        
+    }
+    
+    .phone{
+        display:flex;
+    }
+    .sign{
+        display:none;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .text{
+        top:10px;
+    }
+    .call i{
+        font-size: 18px;
+    } 
+    .call .icon h2{
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    .text2 h1{
+       display:none;
+       
+    }
+    .text2 h4{
+        display:none;
+        
+     }
+    .paraluxtext2 h2{
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .paralux{
+        height:300px;
+    }
+    .paraluxtext{
+        height:300px;
+    }
+    .icon1 i,h4{
+        font-size: 16px;
+    }
+    .color h1{
+        padding-top: 0px;
+    }
+    .text2{
+        margin: 10px 20px;
+        text-align: center;
+    }
+    .text2 p{
+        display: none;
+    }
+    .text3 p{
+        font-size: 20px;
+    }
+    
+    .icon1{
+        margin-top:5px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .text h1{
+        font-size: 22px;
+        padding:5px;
+        margin-top: 2px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .award h1{
+        font-size: 17px;
+    }
+    .address .followus{
+        font-size: 25px;
+    }
+    .careertextbody h2{
+        text-align: center;
+    }
+    .careertextbody p{
+        text-align: center;
+    }
+    .careerbutton{
+       display:block;
+       margin:20px auto;
+    
+    }
+
+}
+
+
+
+
+
+
